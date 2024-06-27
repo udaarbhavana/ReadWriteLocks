@@ -53,8 +53,8 @@ The Writer class implements the Runnable interface for writer threads. Each writ
 
 ![input reader and writer](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/2a6fbbc9-689e-4c73-878f-f5a6df230135)
 
-i. User taken the initial value od shared variable 's' as 10
-ii. User taken no. of readers is 2 as input i.e Reader 1 and Reader 2
+1. User taken the initial value od shared variable 's' as 10
+2. User taken no. of readers is 2 as input i.e Reader 1 and Reader 2
 iii. User taken no. of writers is 2 as input i.e writer 1 and writer 2
 iv. Now READER and WRITER threads are created successfully.
 
