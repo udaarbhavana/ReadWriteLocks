@@ -28,7 +28,7 @@ The project is organized into the following classes, each in its own file within
 
 The Main class initializes the shared variable s, takes input for the number of reader and writer threads, and creates the respective threads. It handles invalid input and coordinates the creation and execution of threads.
 
-### ReadWriteLock![threads example 1](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/d8d28546-71ab-4abf-87fc-fd25bfd85982)
+### ReadWriteLock
  Class
 
 The ReadWrite class defines the shared variable s, locks (mutex and wrt), and methods to manage reader and writer synchronization. It includes methods to lock and unlock the write access, increment and decrement the reader count, and retrieve the shared variable's value.
@@ -51,12 +51,28 @@ The Writer class implements the Runnable interface for writer threads. Each writ
 
 ## Example
 
+![input reader and writer](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/2a6fbbc9-689e-4c73-878f-f5a6df230135)
 
-Enter the initial value of the shared variable 's': 10
-Enter the number of Readers: 2
-Enter the number of Writers: 2
+User taken the initial value od shared variable 's' as 10
+User taken no. of readers is 2 as input i.e Reader 1 and Reader 2
+User taken no. of writers is 2 as input i.e writer 1 and writer 2
+Now READER and WRITER threads are created successfully.
 
-Creating threads...
+![writer 1](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/de07758b-e86a-4dac-bf3b-f620c59b6939)
+
+
+
+
+
+![writer 2](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/d1746b59-4bd1-48a3-8947-ef4f81b32138)
+
+
+![reader](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/f1045760-13c7-4e1e-a6ac-7b879a24af08)
+
+
+
+
+
 
 R0 Waiting for random time between 0ns and 10ns = 5
 W0 Waiting for random time between 0ns and 10ns = 3
