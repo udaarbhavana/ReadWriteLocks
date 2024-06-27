@@ -88,8 +88,8 @@ The Writer class implements the Runnable interface for writer threads. Each writ
 To compile and run the program, use the following commands:
 
 sh
-javac GUVIJAVAPROJECT/*.java
-java GUVIJAVAPROJECT.Main
+javac ThreadsCheck/*.java
+java ThreadsCheck.Main
 
 
 ## Conclusion
