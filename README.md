@@ -54,28 +54,28 @@ The Writer class implements the Runnable interface for writer threads. Each writ
 ![input reader and writer](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/2a6fbbc9-689e-4c73-878f-f5a6df230135)
 
 1. User taken the initial value od shared variable 's' as 10
-2. User taken no. of readers is 2 as input i.e Reader 1 and Reader 2
-iii. User taken no. of writers is 2 as input i.e writer 1 and writer 2
-iv. Now READER and WRITER threads are created successfully.
+2. User taken no. of readers is 2 as input i.e Reader 0 and Reader 1
+3. User taken no. of writers is 2 as input i.e writer 0 and writer 1
+4. Now READER and WRITER threads are created successfully.
 
 ![writer 2](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/d1746b59-4bd1-48a3-8947-ef4f81b32138)
 
-v. Writer 1 will wait for some random time. Then user updates wants to update 2 times.
-vi. First time 5 is added to s, then s becomes 10+5 = 15
-vii. second time 5 is added to s, then s = 15+5 = 20
-viii. Now updated s = 20
+5. Writer 1 will wait for some random time. Then user updates wants to update 2 times.
+6. First time 5 is added to s, then s becomes 10+5 = 15
+7. second time 5 is added to s, then s = 15+5 = 20
+8. Now updated s = 20
 
 ![writer 1](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/de07758b-e86a-4dac-bf3b-f620c59b6939)
 
-ix. Writer 1 has stopped writing and writer 2 starts writing.
-x. Now also user wants to update 2 times with values 5 for first time and 5 for second time.
-xi. Then updated s = 20+5+5 = 30.
+9. Writer 1 has stopped writing and writer 0 starts writing.
+10. Now also user wants to update 2 times with values 5 for first time and 5 for second time.
+11. Then updated s = 20+5+5 = 30.
 
 ![reader](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/f1045760-13c7-4e1e-a6ac-7b879a24af08)
 
-xii. Now Reader 1 and Reader 2 wait for some random times. Then R0 starts reading shared variable.
-xiii. As no writer is left, Reader 2 will start reading shared variable after reader 1 is done.
-xiv. Finally, after joining the thread, we get the shared variable value as 30.
+12. Now Reader 0 and Reader 1 wait for some random times. Then R0 starts reading shared variable.
+13. As no writer is left, Reader 0 will start reading shared variable after reader 1 is done.
+14. Finally, after joining the thread, we get the shared variable value as 30.
 
 
 ## Notes
