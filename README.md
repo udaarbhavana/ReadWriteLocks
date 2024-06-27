@@ -53,40 +53,29 @@ The Writer class implements the Runnable interface for writer threads. Each writ
 
 ![input reader and writer](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/2a6fbbc9-689e-4c73-878f-f5a6df230135)
 
-User taken the initial value od shared variable 's' as 10
-User taken no. of readers is 2 as input i.e Reader 1 and Reader 2
-User taken no. of writers is 2 as input i.e writer 1 and writer 2
-Now READER and WRITER threads are created successfully.
-
-![writer 1](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/de07758b-e86a-4dac-bf3b-f620c59b6939)
-
-
-
-
+i. User taken the initial value od shared variable 's' as 10
+ii. User taken no. of readers is 2 as input i.e Reader 1 and Reader 2
+iii. User taken no. of writers is 2 as input i.e writer 1 and writer 2
+iv. Now READER and WRITER threads are created successfully.
 
 ![writer 2](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/d1746b59-4bd1-48a3-8947-ef4f81b32138)
 
+v. Writer 1 will wait for some random time. Then user updates wants to update 2 times.
+vi. First time 5 is added to s, then s becomes 10+5 = 15
+vii. second time 5 is added to s, then s = 15+5 = 20
+viii. Now updated s = 20
+
+![writer 1](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/de07758b-e86a-4dac-bf3b-f620c59b6939)
+
+ix. Writer 1 has stopped writing and writer 2 starts writing.
+x. Now also user wants to update 2 times with values 5 for first time and 5 for second time.
+xi. Then updated s = 20+5+5 = 30.
 
 ![reader](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/f1045760-13c7-4e1e-a6ac-7b879a24af08)
 
-
-
-
-
-
-R0 Waiting for random time between 0ns and 10ns = 5
-W0 Waiting for random time between 0ns and 10ns = 3
-Enter the number of times R0 wants to read: 2
-R0 is reading...
-R0 reads the shared value = 10
-R0 reads the shared value = 10
-Number of readers present = 1
-
-Enter the number of times W0 wants to write: 1
-Enter the 1th integer value to write: 5
-Updated value of shared variable 's' = 15
-
-Final value of shared variable 's' = 15
+xii. Now Reader 1 and Reader 2 wait for some random times. Then R0 starts reading shared variable.
+xiii. As no writer is left, Reader 2 will start reading shared variable after reader 1 is done.
+xiv. Finally, after joining the thread, we get the shared variable value as 30.
 
 
 ## Notes
