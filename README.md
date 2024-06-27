@@ -17,10 +17,10 @@ The program creates and manages multiple reader and writer threads that interact
 
 ## Project Structure
 
-The project is organized into the following classes, each in its own file within the GUVIJAVAPROJECT package:
+The project is organized into the following classes, each in its own file within the ThreadsCheck package:
 
 1. Main: Contains the main method to start the program.
-2. ReadWrite: Manages the shared resource and synchronization mechanisms.
+2. ReadWriteLock: Manages the shared resource and synchronization mechanisms.
 3. Reader: Implements the reader thread logic.
 4. Writer: Implements the writer thread logic.
 
@@ -28,7 +28,8 @@ The project is organized into the following classes, each in its own file within
 
 The Main class initializes the shared variable s, takes input for the number of reader and writer threads, and creates the respective threads. It handles invalid input and coordinates the creation and execution of threads.
 
-### ReadWrite Class
+### ReadWriteLock![threads example 1](https://github.com/udaarbhavana/ReadWriteLocks/assets/118459224/d8d28546-71ab-4abf-87fc-fd25bfd85982)
+ Class
 
 The ReadWrite class defines the shared variable s, locks (mutex and wrt), and methods to manage reader and writer synchronization. It includes methods to lock and unlock the write access, increment and decrement the reader count, and retrieve the shared variable's value.
 
